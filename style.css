@@ -5,6 +5,7 @@ body{
     display: grid;
     grid-template-areas: 'header header header header' 'nav nav nav nav' 'section section aside aside' 'footer footer footer footer';
     grid-template-rows: 150px 80px 700px 60px;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 
 header{
@@ -36,8 +37,19 @@ nav a{
 section{
     grid-area: section;
     background-color: #F2B880;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
+section img{
+    width: 40%;
+    height: auto;
+}
+section p{
+    text-align: justify;
+    padding: 5%;
+}
 aside{
     grid-area: aside;
     background-color: #E7CFBC;
